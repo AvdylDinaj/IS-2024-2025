@@ -23,7 +23,7 @@ const LocationCard: React.FC<Props> = ({
 }) => {
 
     return (
-        <Card className="w-full lg:w-[350px]">
+        <Card className="w-full">
             <CardHeader>
                 <CardTitle>
                     <LocationToggleSwitch props={
