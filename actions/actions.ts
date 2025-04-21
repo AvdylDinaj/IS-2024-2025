@@ -156,9 +156,9 @@ export async function sendConfirmationEmail(bookingid: string): Promise<ActionRe
                 subject: "Your booking has been confirmed",
                 react: EmailTemplate({
                     firstName: user?.firstName!,
-                    bookingDate: formatDate(booking.bookingdate, 'MMM dd, yyyy'),
-                    arrivingOn: formatDate(booking.starttime, 'hh:mm a'),
-                    leavingOn: formatDate(booking.endtime, 'hh:mm a'),
+                    bookingDate: format(booking.bookingdate, 'MMM dd, yyyy'),
+                    arrivingOn: format(booking.starttime, 'hh:mm a'),
+                    leavingOn: format(booking.endtime, 'hh:mm a'),
                     plateNo: booking.plate,
                     address: ((booking?.locationid as any) as ParkingLocation).address 
                 })
