@@ -1,7 +1,7 @@
 This is a Next.js project bootstrapped with create-next-app.
 
 Environment keys
-You must configure these before running the app. Watch the video on my youtube channel on how to get them.
+You must configure these before running the app.
 
 NEXT_PUBLIC_MAPS_API_KEY=<GOOGLE_MAPS>
 
